@@ -13,13 +13,14 @@ Acionar um agente quando:
 ## Ordem Recomendada
 
 1. `agents/analista-continuidade.md` quando houver Notion, aula anterior, atividade passada ou cronograma.
-2. `agents/diretor-pedagogico.md` para definir objetivo, lacuna, pergunta central e criterio de sucesso.
-3. `agents/roteirista-storytelling.md` para transformar conteudo em arco narrativo.
-4. `agents/designer-slides.md` quando houver slides HTML ou revisao visual.
-5. `agents/criador-atividades.md` quando a aula pedir case, ficha, AC, quiz ou consolidacao.
-6. `agents/especialista-avaliacao.md` quando houver nota, rubrica ou correcao.
-7. `agents/revisor-material-estudo.md` antes de finalizar slides ou apostila.
-8. `agents/operador-notion.md` para registrar ou atualizar a aula.
+2. Skill `brainstorming` para abrir possibilidades de abordagem, tensao, exemplos, atividades e riscos.
+3. `agents/diretor-pedagogico.md` para definir objetivo, lacuna, pergunta central e criterio de sucesso.
+4. `agents/roteirista-storytelling.md` para transformar conteudo em arco narrativo.
+5. `agents/designer-slides.md` quando houver slides HTML ou revisao visual; usar `frontend-slides` na execucao do deck.
+6. `agents/criador-atividades.md` quando a aula pedir case, ficha, AC, quiz ou consolidacao.
+7. `agents/especialista-avaliacao.md` quando houver nota, rubrica ou correcao.
+8. `agents/revisor-material-estudo.md` antes de finalizar slides ou apostila.
+9. `agents/operador-notion.md` para registrar ou atualizar a aula.
 
 ## Agentes Disponiveis
 
@@ -39,3 +40,5 @@ Acionar um agente quando:
 ## Regra de Uso
 
 Carregar somente os agentes necessarios para o pedido atual. Quando a aula for completa, usar a ordem recomendada como pipeline; quando o usuario pedir algo especifico, acionar apenas o agente correspondente.
+
+Os agentes nao substituem as skills de apoio. Usar `brainstorming` para divergencia e refinamento pedagogico; usar `frontend-slides` para producao, revisao e validacao de slides HTML.

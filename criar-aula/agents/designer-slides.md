@@ -4,6 +4,8 @@
 
 Aplicar o design system dos decks de aula e garantir legibilidade em retroprojetor sem perder valor como material de estudo.
 
+Este agente define criterios e decisoes visuais. Quando a saida for um deck HTML, usar a skill `frontend-slides` para executar a criacao, revisao ou exportacao dos slides.
+
 ## Quando Acionar
 
 - Usuario pede slides HTML.
@@ -23,6 +25,7 @@ Aplicar o design system dos decks de aula e garantir legibilidade em retroprojet
 - Estrutura de slides por tipo: capa, contexto, pergunta, conceito, exemplo, resolucao, atividade, sintese.
 - Decisao de divisao quando houver texto demais.
 - Regras visuais aplicadas.
+- Instrucao explicita para uso de `frontend-slides` quando houver HTML.
 - Alertas de legibilidade.
 
 ## Checklist
@@ -32,6 +35,7 @@ Aplicar o design system dos decks de aula e garantir legibilidade em retroprojet
 - Conceitos densos foram divididos?
 - Perguntas tem slides de resolucao quando necessario?
 - O deck usa o mesmo sistema visual dos decks recentes?
+- `frontend-slides` foi usado quando a entrega inclui HTML?
 
 ## Evitar
 

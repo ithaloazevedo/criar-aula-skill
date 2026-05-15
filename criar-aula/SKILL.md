@@ -11,6 +11,15 @@ Orquestrar a criacao de aulas com qualidade pedagogica, continuidade curricular,
 
 Esta skill nao e apenas um gerador de slides. Ela deve produzir uma aula que faca sentido para a turma, conecte com aulas anteriores, tenha um arco narrativo claro e deixe materiais reutilizaveis para estudo posterior.
 
+## Skills de Apoio
+
+Esta skill orquestra o fluxo. Ela deve acionar skills de apoio quando a tarefa pedir capacidades especializadas.
+
+- Use `brainstorming` antes de criar ou reformular uma aula, especialmente quando houver decisao de abordagem, narrativa, atividade, avaliacao ou design. A saida esperada e uma direcao pedagogica mais clara: tensao da aula, possibilidades de roteiro, riscos e alternativas.
+- Use `frontend-slides` sempre que gerar, revisar ou exportar slides HTML. A saida esperada e um deck navegavel, legivel em sala, visualmente consistente e validado no navegador quando possivel.
+
+Nao substituir essas skills pelos agentes internos. Os agentes definem responsabilidades pedagogicas; as skills de apoio trazem metodos e ferramentas especializadas.
+
 ## Fluxo Obrigatorio
 
 Sempre seguir este fluxo:
@@ -19,29 +28,33 @@ Sempre seguir este fluxo:
    - Buscar plano de ensino, cronograma, aulas anteriores, observacoes e materiais relacionados.
    - Identificar o que a turma ja viu e o que precisa ser retomado.
 
-2. **Diagnostico pedagogico**
+2. **Brainstorming pedagogico**
+   - Usar `brainstorming` para explorar abordagem, tensao narrativa, exemplos, atividades e riscos.
+   - Consolidar uma direcao antes de escrever o roteiro.
+
+3. **Diagnostico pedagogico**
    - Definir objetivo da aula, lacuna de aprendizagem, prerequisitos e ancora conceitual.
    - Se houver material anterior, revisar criticamente continuidade, linguagem, ritmo e profundidade.
 
-3. **Roteiro com storytelling**
+4. **Roteiro com storytelling**
    - Estruturar a aula em atos.
    - Alternar problema, pergunta, conceito, aplicacao, resposta e sintese.
    - Garantir que perguntas importantes tenham respostas/resolucoes conectadas.
 
-4. **Slides**
-   - Gerar HTML usando o design system documentado em `references/design-system-slides.md`.
+5. **Slides**
+   - Usar `frontend-slides` para gerar ou revisar HTML usando o design system documentado em `references/design-system-slides.md`.
    - Fazer slides legiveis para sala, mas tambem uteis como material de estudo.
    - Incluir mais detalhe em slides conceituais quando isso ajudar o aluno a revisar depois.
 
-5. **Atividades quando fizer sentido**
+6. **Atividades quando fizer sentido**
    - Criar cases, perguntas, fichas, rubricas e resolucoes esperadas.
    - Para atividade avaliativa, sempre registrar criterio de correcao.
 
-6. **Documentacao no Notion**
+7. **Documentacao no Notion**
    - Criar ou atualizar pagina da aula com roteiro, apostila/material de estudo, recursos e observacoes.
    - Registrar limitacoes de anexos quando o conector nao puder subir arquivos locais.
 
-7. **Revisao final**
+8. **Revisao final**
    - Rodar checklist de qualidade pedagogica, visual e documental.
    - Verificar se a aula ficou interativa, clara e estudavel.
 
@@ -80,6 +93,7 @@ Para aulas novas:
 
 - Spec ou roteiro aprovado.
 - Slides HTML em `aulas/<disciplina>/<tema>/slides.html`.
+- Evidencia de uso de `frontend-slides` na criacao ou revisao do deck.
 - PDF se a exportacao estiver disponivel.
 - Pagina no Notion com roteiro e apostila/material de estudo.
 - Atividades e resolucoes quando aplicavel.
@@ -102,3 +116,5 @@ Antes de gerar slides, responder:
 - Qual conceito resolve a tensao?
 - Onde o aluno aplica?
 - Qual resposta ou sintese ele leva para estudar depois?
+
+Se essas respostas ainda estiverem fracas, voltar para `brainstorming` antes de produzir os slides.
