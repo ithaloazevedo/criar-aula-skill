@@ -1,4 +1,4 @@
-# Agentes da Skill Criar Aula
+# Mapa de Agentes da Skill Criar Aula
 
 ## Principio
 
@@ -8,140 +8,34 @@ Acionar um agente quando:
 
 - o usuario pedir explicitamente;
 - houver risco claro de baixa qualidade naquela dimensao;
-- a aula for uma revisao, fechamento de unidade, avaliacao ou material reutilizavel.
+- a aula for revisao, fechamento de unidade, avaliacao ou material reutilizavel.
 
-## Diretor Pedagogico
+## Ordem Recomendada
 
-Responsavel por definir:
+1. `agents/analista-continuidade.md` quando houver Notion, aula anterior, atividade passada ou cronograma.
+2. `agents/diretor-pedagogico.md` para definir objetivo, lacuna, pergunta central e criterio de sucesso.
+3. `agents/roteirista-storytelling.md` para transformar conteudo em arco narrativo.
+4. `agents/designer-slides.md` quando houver slides HTML ou revisao visual.
+5. `agents/criador-atividades.md` quando a aula pedir case, ficha, AC, quiz ou consolidacao.
+6. `agents/especialista-avaliacao.md` quando houver nota, rubrica ou correcao.
+7. `agents/revisor-material-estudo.md` antes de finalizar slides ou apostila.
+8. `agents/operador-notion.md` para registrar ou atualizar a aula.
 
-- objetivo de aprendizagem;
-- prerequisitos;
-- lacunas da turma;
-- ancora conceitual;
-- criterio de sucesso da aula.
+## Agentes Disponiveis
 
-Pergunta central: "O que o aluno precisa conseguir fazer ou explicar ao final?"
+| Agente | Arquivo | Usar para |
+|---|---|---|
+| Diretor Pedagogico | `agents/diretor-pedagogico.md` | Objetivo, lacuna, pergunta central e criterio de sucesso |
+| Analista de Continuidade | `agents/analista-continuidade.md` | Notion, aulas anteriores, frases-ancora e pendencias |
+| Critico de Aulas Atuais | `agents/critico-aulas-atuais.md` | Analise critica de slides, roteiro, linguagem e utilidade |
+| Editor de Tom de Voz | `agents/editor-tom-voz.md` | Linguagem oral clara, provocacoes e frases-ancora |
+| Roteirista Storytelling | `agents/roteirista-storytelling.md` | Arco narrativo, tensao, transicoes, perguntas e respostas |
+| Designer de Slides | `agents/designer-slides.md` | Design system, legibilidade e densidade |
+| Criador de Atividades | `agents/criador-atividades.md` | Cases, fichas, perguntas, dinamicas e resolucoes |
+| Especialista em Avaliacao | `agents/especialista-avaliacao.md` | Rubricas, pesos, respostas fortes/parciais/fracas |
+| Operador Notion | `agents/operador-notion.md` | Planos, aulas, presencas, faltas, notas e observacoes |
+| Revisor de Material de Estudo | `agents/revisor-material-estudo.md` | Slides estudaveis, NotebookLM e revisao posterior |
 
-## Analista de Continuidade
+## Regra de Uso
 
-Responsavel por ler Notion e materiais anteriores.
-
-Deve retornar:
-
-- aulas relacionadas;
-- conteudos ja vistos;
-- frases-ancora recorrentes;
-- desvios ou observacoes de aulas passadas;
-- conexoes obrigatorias para a aula atual.
-
-## Critico de Aulas Atuais
-
-Responsavel por avaliar materiais existentes.
-
-Olhar para:
-
-- linguagem muito generica;
-- slides que dependem demais da fala do professor;
-- perguntas sem resposta;
-- conceitos pouco detalhados;
-- excesso de texto pequeno;
-- falta de continuidade com aulas anteriores;
-- baixa utilidade como material de estudo.
-
-Saida: lista priorizada de problemas e correcoes recomendadas.
-
-## Editor de Tom de Voz
-
-Responsavel por aproximar o material do jeito do professor explicar.
-
-Preferir:
-
-- perguntas diretas;
-- frases de impacto;
-- linguagem oral clara;
-- exemplos de sala;
-- comparacoes concretas;
-- humor leve quando natural.
-
-Evitar:
-
-- linguagem corporativa vazia;
-- definicoes enciclopedicas;
-- frases longas demais;
-- tom impessoal de apostila generica.
-
-## Roteirista / Storytelling
-
-Responsavel por transformar conteudo em arco narrativo.
-
-Padrao recomendado:
-
-1. Problema ou caso.
-2. Pergunta que cria tensao.
-3. Tentativa intuitiva dos alunos.
-4. Conceito que organiza a resposta.
-5. Exemplo ou contraexemplo.
-6. Pergunta de aplicacao.
-7. Resolucao.
-8. Sintese estudavel.
-
-## Designer de Slides
-
-Responsavel por aplicar o design system e controlar densidade.
-
-Deve decidir o tipo de cada slide:
-
-- capa;
-- contexto;
-- pergunta;
-- conceito;
-- exemplo;
-- resolucao;
-- atividade;
-- sintese;
-- impacto.
-
-## Criador de Atividades
-
-Responsavel por cases, fichas e exercicios.
-
-Toda atividade deve ter:
-
-- contexto realista;
-- perguntas claras;
-- tempo ou dinamica sugerida;
-- resposta esperada;
-- criterio de correcao quando avaliativa.
-
-## Especialista em Avaliacao
-
-Responsavel por:
-
-- rubricas;
-- pesos;
-- criterios objetivos;
-- exemplos de resposta fraca, media e forte;
-- alinhamento com N1, N2, AC ou revisao.
-
-## Operador Notion
-
-Responsavel por:
-
-- buscar contexto;
-- criar ou atualizar plano de aula;
-- registrar roteiro;
-- registrar apostila/material de estudo;
-- registrar observacoes;
-- lidar com presencas, faltas e notas quando solicitado e quando o conector permitir.
-
-## Revisor de Material de Estudo
-
-Responsavel por garantir que os slides e a apostila sirvam depois da aula.
-
-Checklist:
-
-- conceitos tem definicoes suficientes;
-- perguntas tem respostas;
-- exemplos estao contextualizados;
-- termos importantes aparecem por escrito;
-- material pode ser usado em NotebookLM ou revisao sem depender totalmente da fala oral.
+Carregar somente os agentes necessarios para o pedido atual. Quando a aula for completa, usar a ordem recomendada como pipeline; quando o usuario pedir algo especifico, acionar apenas o agente correspondente.

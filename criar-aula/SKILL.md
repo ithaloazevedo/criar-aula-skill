@@ -47,24 +47,26 @@ Sempre seguir este fluxo:
 
 ## Agentes Especializados
 
-O nucleo acima e obrigatorio. Agentes abaixo sao acionados quando o usuario pedir ou quando a aula claramente precisar.
+O nucleo acima e obrigatorio. Os agentes especializados sao acionados quando o usuario pedir um foco especifico ou quando a aula claramente precisar de reforco naquela dimensao.
 
-Leia `references/agentes.md` para prompts, responsabilidades e criterios de acionamento.
+Use `references/agentes.md` como mapa de orquestracao. Quando acionar um especialista, carregue o arquivo correspondente em `agents/`:
 
-- **Critico de aulas atuais**: avaliar slides, registros e materiais existentes.
-- **Editor de tom de voz**: aproximar texto do jeito do professor explicar.
-- **Roteirista/storytelling**: fortalecer arco narrativo, tensoes e transicoes.
-- **Designer de slides**: aplicar design system e controlar densidade.
-- **Criador de atividades**: criar cases, perguntas, fichas e resolucoes.
-- **Especialista em avaliacao**: criar rubricas, criterios e resposta esperada.
-- **Operador Notion**: organizar planos, aulas, presencas/faltas, notas e observacoes.
-- **Revisor de material de estudo**: garantir utilidade posterior para revisao e NotebookLM.
+- `agents/diretor-pedagogico.md` - objetivo, lacuna, criterio de sucesso e decisao didatica.
+- `agents/analista-continuidade.md` - leitura de Notion, aulas anteriores, frases-ancora e desvios.
+- `agents/critico-aulas-atuais.md` - avaliacao de slides, linguagem, ritmo, profundidade e utilidade de estudo.
+- `agents/editor-tom-voz.md` - ajuste do texto ao jeito do professor explicar.
+- `agents/roteirista-storytelling.md` - arco narrativo, tensoes, transicoes, perguntas e respostas.
+- `agents/designer-slides.md` - design system, legibilidade, densidade e tipos de slide.
+- `agents/criador-atividades.md` - cases, fichas, perguntas, dinamicas e resolucoes.
+- `agents/especialista-avaliacao.md` - rubricas, criterios, pesos e exemplos de resposta.
+- `agents/operador-notion.md` - plano de aula, registros, presencas, faltas, notas e observacoes.
+- `agents/revisor-material-estudo.md` - qualidade dos materiais para revisao posterior e NotebookLM.
 
 ## Referencias
 
 Carregar somente o que for necessario:
 
-- `references/agentes.md` - arquitetura agentic e prompts de especialistas.
+- `references/agentes.md` - mapa de orquestracao dos agentes especializados.
 - `references/tom-de-voz.md` - linguagem, ritmo e estilo do professor.
 - `references/design-system-slides.md` - sistema visual dos HTMLs de aula.
 - `references/storytelling-pedagogico.md` - padroes de roteiro, perguntas e respostas.
