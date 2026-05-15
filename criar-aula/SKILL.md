@@ -51,8 +51,10 @@ Sempre seguir este fluxo:
    - Para atividade avaliativa, sempre registrar criterio de correcao.
 
 7. **Documentacao no Notion**
-   - Criar ou atualizar pagina da aula com roteiro, apostila/material de estudo, recursos e observacoes.
-   - Registrar limitacoes de anexos quando o conector nao puder subir arquivos locais.
+   - Criar ou atualizar pagina da aula com roteiro, recursos, atividades, resolucoes e observacoes.
+   - Quando houver apostila/material de leitura, criar pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteúdo`, e linkar na aula.
+   - Usar a coluna de arquivos quando o conector permitir anexar ou referenciar artefatos corretamente.
+   - Registrar limitacoes de anexos sem transformar caminho local em saida oficial.
 
 8. **Revisao final**
    - Rodar checklist de qualidade pedagogica, visual e documental.
@@ -72,6 +74,7 @@ Use `references/agentes.md` como mapa de orquestracao. Quando acionar um especia
 - `agents/designer-slides.md` - design system, legibilidade, densidade e tipos de slide.
 - `agents/criador-atividades.md` - cases, fichas, perguntas, dinamicas e resolucoes.
 - `agents/especialista-avaliacao.md` - rubricas, criterios, pesos e exemplos de resposta.
+- `agents/criador-apostilas.md` - apostilas premium, artigos didaticos, materiais de leitura e roteiros de estudo.
 - `agents/operador-notion.md` - plano de aula, registros, presencas, faltas, notas e observacoes.
 - `agents/revisor-material-estudo.md` - qualidade dos materiais para revisao posterior e NotebookLM.
 
@@ -92,10 +95,11 @@ Carregar somente o que for necessario:
 Para aulas novas:
 
 - Spec ou roteiro aprovado.
-- Slides HTML em `aulas/<disciplina>/<tema>/slides.html`.
+- Slides HTML/PDF registrados no Notion quando o conector permitir, com limitacoes documentadas quando necessario.
 - Evidencia de uso de `frontend-slides` na criacao ou revisao do deck.
 - PDF se a exportacao estiver disponivel.
-- Pagina no Notion com roteiro e apostila/material de estudo.
+- Pagina no Notion com roteiro, recursos e atividades.
+- Apostila/material de leitura em pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteúdo`.
 - Atividades e resolucoes quando aplicavel.
 
 Para refinamento de aulas existentes:

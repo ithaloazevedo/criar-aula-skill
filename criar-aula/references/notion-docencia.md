@@ -19,6 +19,8 @@ Depois de criar aula:
 - registrar recursos;
 - registrar observacoes.
 
+Quando a apostila for material de leitura para alunos, nao registra-la apenas dentro do corpo do plano de aula. Criar pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base e linkar essa pagina a partir da aula.
+
 ## Campos Comuns
 
 Campos esperados em bases de planos de aula:
@@ -68,6 +70,18 @@ Estrutura recomendada:
 7. Apostila/material de estudo.
 8. Observacoes de execucao.
 
+## Apostilas e Materiais de Estudo
+
+Quando a aula tiver apostila, roteiro de estudos ou artigo educacional:
+
+1. Criar uma pagina separada na mesma base da disciplina.
+2. Usar titulo no padrao `Apostila — <tema>`.
+3. Marcar `Tipo` como a opcao real de conteudo da base, por exemplo `Conteúdo`.
+4. Marcar `Status` como concluido quando o material estiver pronto.
+5. Preencher datas quando aplicavel.
+6. Linkar essa pagina a partir da pagina principal da aula.
+7. Manter o texto completo da apostila dentro do Notion, nao apenas em arquivo local.
+
 ## Presenca, Faltas e Notas
 
 Quando o usuario pedir para operar presencas, faltas ou notas:
@@ -83,6 +97,8 @@ O conector do Notion pode nao fazer upload de arquivos locais.
 
 Quando isso acontecer:
 
-- registrar caminho local do HTML/PDF;
-- avisar que o anexo precisa ser feito manualmente;
+- registrar a limitacao em `Observacoes`;
+- manter roteiro, apostila e materiais de estudo como conteudo de paginas Notion;
+- usar a coluna `Arquivos` apenas quando o conector permitir preencher anexos corretamente;
 - nao afirmar que o arquivo foi anexado.
+- nao registrar caminho local como substituto oficial do arquivo.

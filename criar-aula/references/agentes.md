@@ -19,8 +19,9 @@ Acionar um agente quando:
 5. `agents/designer-slides.md` quando houver slides HTML ou revisao visual; usar `frontend-slides` na execucao do deck.
 6. `agents/criador-atividades.md` quando a aula pedir case, ficha, AC, quiz ou consolidacao.
 7. `agents/especialista-avaliacao.md` quando houver nota, rubrica ou correcao.
-8. `agents/revisor-material-estudo.md` antes de finalizar slides ou apostila.
-9. `agents/operador-notion.md` para registrar ou atualizar a aula.
+8. `agents/criador-apostilas.md` quando houver apostila, artigo de estudo, roteiro de leitura ou material para NotebookLM.
+9. `agents/revisor-material-estudo.md` antes de finalizar slides ou apostila.
+10. `agents/operador-notion.md` para registrar ou atualizar a aula.
 
 ## Agentes Disponiveis
 
@@ -34,6 +35,7 @@ Acionar um agente quando:
 | Designer de Slides | `agents/designer-slides.md` | Design system, legibilidade e densidade |
 | Criador de Atividades | `agents/criador-atividades.md` | Cases, fichas, perguntas, dinamicas e resolucoes |
 | Especialista em Avaliacao | `agents/especialista-avaliacao.md` | Rubricas, pesos, respostas fortes/parciais/fracas |
+| Criador de Apostilas | `agents/criador-apostilas.md` | Apostilas premium em paginas Notion com Tipo de conteudo da base, artigos didaticos, leitura para alunos e NotebookLM |
 | Operador Notion | `agents/operador-notion.md` | Planos, aulas, presencas, faltas, notas e observacoes |
 | Revisor de Material de Estudo | `agents/revisor-material-estudo.md` | Slides estudaveis, NotebookLM e revisao posterior |
 
