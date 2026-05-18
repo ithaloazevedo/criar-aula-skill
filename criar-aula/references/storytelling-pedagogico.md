@@ -97,6 +97,36 @@ Usar para aulas de gestao e consultoria.
 
 Usar quando a turma tem baixo repertorio e o tema exige apresentacao cuidadosa antes da aplicacao.
 
+### Conceito -> Analogia -> Exemplo real -> Provocacao -> Resolucao
+
+Usar quando o tema e abstrato demais para a turma e precisa de traducao progressiva antes da formalizacao.
+
+Perguntas uteis:
+
+- que analogia do cotidiano reduz abstracao sem induzir erro?
+- que caso real ou situacao plausivel mostra por que isso importa?
+- qual pergunta provoca tomada de posicao antes da explicacao oficial?
+- que resposta fecha a discussao sem deixar a turma no ar?
+
+## Analogias e Casos
+
+Analogias sao ferramentas didaticas, nao adornos.
+
+Boas analogias:
+
+- simplificam sem trair o conceito;
+- usam repertorio cotidiano do aluno;
+- tornam visivel uma estrutura abstrata;
+- sao encerradas com retorno claro ao conceito formal.
+
+Casos reais e falhas conhecidas ajudam a responder "por que aprender isso agora?".
+
+Sempre que possivel:
+
+- ligar o conceito a empresas, produtos, servicos ou incidentes reconheciveis;
+- mostrar impacto tecnico, gerencial ou humano;
+- evitar citar o caso apenas como curiosidade lateral.
+
 ## Slides Estudaveis
 
 Um slide estudavel:
@@ -112,6 +142,7 @@ Slides de impacto podem ser curtos. Slides de conceito devem ter mais substancia
 Para turma pouco participativa, o deck precisa carregar mais o ritmo da aula:
 
 - perguntas provocativas;
+- slides de provocacao seguidos de slides de resposta ou fechamento;
 - pausas de levantamento de mao;
 - comparacoes entre cenarios;
 - estudos de caso;

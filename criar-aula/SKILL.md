@@ -29,6 +29,22 @@ Consequencias praticas:
 - perguntas provocativas, pausas de interacao, comparacoes, mini-cases e sinteses visuais nao sao "extras"; sao parte central da estrategia didatica;
 - nao reduzir densidade conceitual em nome de limpeza visual quando isso comprometer a compreensao posterior.
 
+## Diretrizes Didaticas Prioritarias
+
+Ao estruturar aula, slides, apostila ou atividade, priorizar:
+
+- usar analogias visuais e do cotidiano quando ajudarem a reduzir abstracao sem distorcer o conceito tecnico;
+- ancorar conceitos em casos reais, falhas conhecidas, situacoes de mercado ou cenarios organizacionais plausiveis;
+- alternar provocacao e resposta sempre que isso aumentar participacao e fixacao;
+- sustentar o ritmo do bloco com progressao clara entre conceito, analogia, exemplo, provocacao, resolucao e sintese.
+
+Regras praticas:
+
+- nao usar analogia como enfeite; usar quando ela realmente aumentar compreensao;
+- nao citar caso real apenas como curiosidade; conectar explicitamente o caso ao conceito que esta sendo ensinado;
+- quando houver slide de provocacao importante, criar logo em seguida slide de resposta, explicacao ou fechamento;
+- evitar parede de texto, mas sem eliminar o contexto que o aluno precisa para estudar sozinho.
+
 ## Blocos de 2 a 3 Aulas
 
 Quando o encontro da semana envolver 2 ou 3 aulas consecutivas da mesma disciplina, planejar primeiro como um bloco narrativo unico.
@@ -103,6 +119,9 @@ Sempre seguir este fluxo:
    - Fazer slides legiveis para sala, mas tambem uteis como material de estudo.
    - Incluir mais detalhe em slides conceituais quando isso ajudar o aluno a revisar depois.
    - Para turma pouco participativa, incluir provocacoes, pausas de interacao, comparacoes, mini-cases, perguntas de mao levantada, transicoes e sinteses ao longo do deck.
+   - Sempre que fizer sentido, traduzir conceitos abstratos com analogias do cotidiano e conecta-las em seguida com o conceito formal.
+   - Inserir casos reais, falhas conhecidas, situacoes de mercado ou cenarios plausiveis para explicar por que o conceito importa.
+   - Quando houver provocacao pedagogicamente relevante, preferir a sequencia provocacao -> resposta/explicacao em slides proximos.
    - Evitar decks curtos por reflexo. Para blocos de 2 ou 3 aulas, preferir deck longo, com espaco para contexto, definicoes, exemplos, contrastes, aplicacoes e revisoes.
    - Evitar tambem a fragmentacao excessiva em slides atomizados. Um deck pode ser longo sem virar uma sequencia de frases quebradas e sem continuidade.
    - Nao citar conceito novo relevante sem slide ou trecho que o apresente de forma estudavel.

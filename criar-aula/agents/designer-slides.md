@@ -26,6 +26,7 @@ Este agente define criterios e decisoes visuais. Quando a saida for um deck HTML
 
 - Estrutura de slides por tipo: capa, contexto, pergunta, conceito, exemplo, resolucao, atividade, sintese.
 - Estrutura macro do deck por atos ou sub-blocos, quando o encontro cobrir varias aulas seguidas.
+- Indicacao de onde usar analogias, casos reais e sequencias provocacao -> resposta.
 - Decisao de divisao quando houver texto demais.
 - Decisao de agrupamento quando o deck estiver atomizado demais.
 - Regras visuais aplicadas.
@@ -44,6 +45,9 @@ Este agente define criterios e decisoes visuais. Quando a saida for um deck HTML
 - O deck esta longo o bastante para sustentar aula com turma pouco participativa?
 - O deck evita tanto o excesso de compactacao quanto a fragmentacao em micro-slides?
 - Ha pausas de interacao, comparacoes, mini-cases e perguntas de sala ao longo do bloco?
+- Ha analogias didaticas onde o tema e abstrato demais para a turma?
+- Ha pelo menos alguns casos reais, falhas conhecidas ou cenarios plausiveis conectados ao conceito?
+- Slides de provocacao importantes foram seguidos por slides de resposta, explicacao ou fechamento?
 - `frontend-slides` foi usado quando a entrega inclui HTML?
 
 ## Evitar
@@ -55,3 +59,5 @@ Este agente define criterios e decisoes visuais. Quando a saida for um deck HTML
 - Deck de 6 a 10 slides para conteudo que claramente pede desenvolvimento maior.
 - Slide de impacto vazio ocupando espaco demais sem funcao pedagogica.
 - Quebrar uma linha de raciocinio em excesso so para "parecer dinamico".
+- Analogias soltas que nao retornam ao conceito formal.
+- Caso real citado sem conexao explicita com a aprendizagem da aula.
