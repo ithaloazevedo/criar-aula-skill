@@ -59,6 +59,22 @@ Se houve uma pergunta em slide, criar slide de resposta quando a resposta for pe
 
 Fechar com frase ou mapa que sirva para estudo posterior.
 
+## Blocos Maiores de Aula
+
+Quando o professor tiver 2 ou 3 aulas consecutivas sobre o mesmo tema:
+
+- pensar primeiro no arco do bloco inteiro;
+- distribuir as viradas entre as sub-aulas;
+- evitar que cada aula repita a mesma estrutura em miniatura de forma mecanica;
+- usar cada aula como etapa de um movimento maior: abrir o problema, aprofundar, aplicar, consolidar.
+
+Perguntas uteis:
+
+- qual e a grande tensao do bloco?
+- o que precisa ficar claro ate o fim da primeira aula?
+- o que pode amadurecer na segunda?
+- qual aplicacao ou sintese fecha a terceira?
+
 ## Padroes de Sequencia
 
 ### Caso -> Pergunta -> Conceito -> Resolucao
@@ -77,6 +93,10 @@ Usar para transformacao, processos, governanca e gestao.
 
 Usar para aulas de gestao e consultoria.
 
+### Panorama -> Conceitos-base -> Casos -> Sintese
+
+Usar quando a turma tem baixo repertorio e o tema exige apresentacao cuidadosa antes da aplicacao.
+
 ## Slides Estudaveis
 
 Um slide estudavel:
@@ -88,3 +108,12 @@ Um slide estudavel:
 - pode ser interpretado por um aluno ausente.
 
 Slides de impacto podem ser curtos. Slides de conceito devem ter mais substancia.
+
+Para turma pouco participativa, o deck precisa carregar mais o ritmo da aula:
+
+- perguntas provocativas;
+- pausas de levantamento de mao;
+- comparacoes entre cenarios;
+- estudos de caso;
+- perguntas de saida;
+- transicoes explicitas entre atos.

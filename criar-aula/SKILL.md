@@ -11,6 +11,37 @@ Orquestrar a criacao de aulas com qualidade pedagogica, continuidade curricular,
 
 Esta skill nao e apenas um gerador de slides. Ela deve produzir uma aula que faca sentido para a turma, conecte com aulas anteriores, tenha um arco narrativo claro e deixe materiais reutilizaveis para estudo posterior.
 
+Por padrao, esta skill deve resistir ao anti-padrao de artefatos "micro": deck curto demais, apostila resumida demais, conceito citado sem preparo e conteudo excessivamente quebrado em blocos sem respiracao narrativa.
+
+## Perfil da Turma e Nivel de Explicacao
+
+Assumir, salvo instrucao explicita do professor em sentido contrario, que a turma:
+
+- tem repertorio tecnico baixo ou irregular;
+- nao domina naturalmente vocabulario de tecnologia;
+- participa menos espontaneamente do que o ideal;
+- depende de exemplos concretos, definicoes claras e repeticao inteligente para consolidar conceitos.
+
+Consequencias praticas:
+
+- todo conceito novo importante deve ser introduzido, definido, contextualizado e exemplificado antes de ser usado como se fosse obvio;
+- slides e apostilas devem funcionar tambem para aluno ausente, nao apenas para quem ouviu a fala do professor;
+- perguntas provocativas, pausas de interacao, comparacoes, mini-cases e sinteses visuais nao sao "extras"; sao parte central da estrategia didatica;
+- nao reduzir densidade conceitual em nome de limpeza visual quando isso comprometer a compreensao posterior.
+
+## Blocos de 2 a 3 Aulas
+
+Quando o encontro da semana envolver 2 ou 3 aulas consecutivas da mesma disciplina, planejar primeiro como um bloco narrativo unico.
+
+So depois de definir o arco maior, dividir em sub-blocos de aula.
+
+Regra operacional:
+
+- pensar o conteudo no nivel do bloco;
+- distribuir tensao, reativacao, conceito, aplicacao e sintese ao longo do bloco inteiro;
+- evitar tratar cada aula como uma "microaula" isolada quando o professor precisa de continuidade forte;
+- permitir varias dezenas de slides no deck consolidado quando isso for pedagogicamente melhor do que decks curtos e fragmentados.
+
 ## Skills de Apoio
 
 Esta skill orquestra o fluxo. Ela deve acionar skills de apoio quando a tarefa pedir capacidades especializadas.
@@ -56,6 +87,7 @@ Sempre seguir este fluxo:
 2. **Brainstorming pedagogico**
    - Usar `brainstorming` para explorar abordagem, tensao narrativa, exemplos, atividades e riscos.
    - Consolidar uma direcao antes de escrever o roteiro.
+   - Quando houver 2 ou 3 aulas em sequencia, consolidar primeiro o arco do bloco inteiro e so depois a divisao entre as aulas.
 
 3. **Diagnostico pedagogico**
    - Definir objetivo da aula, lacuna de aprendizagem, prerequisitos e ancora conceitual.
@@ -70,6 +102,10 @@ Sempre seguir este fluxo:
    - Usar `frontend-slides` para gerar ou revisar HTML usando o design system documentado em `references/design-system-slides.md`.
    - Fazer slides legiveis para sala, mas tambem uteis como material de estudo.
    - Incluir mais detalhe em slides conceituais quando isso ajudar o aluno a revisar depois.
+   - Para turma pouco participativa, incluir provocacoes, pausas de interacao, comparacoes, mini-cases, perguntas de mao levantada, transicoes e sinteses ao longo do deck.
+   - Evitar decks curtos por reflexo. Para blocos de 2 ou 3 aulas, preferir deck longo, com espaco para contexto, definicoes, exemplos, contrastes, aplicacoes e revisoes.
+   - Evitar tambem a fragmentacao excessiva em slides atomizados. Um deck pode ser longo sem virar uma sequencia de frases quebradas e sem continuidade.
+   - Nao citar conceito novo relevante sem slide ou trecho que o apresente de forma estudavel.
 
 6. **Atividades quando fizer sentido**
    - Criar cases, perguntas, fichas, rubricas e resolucoes esperadas.
@@ -116,6 +152,10 @@ Carregar somente o que for necessario:
 - `references/atividades-e-avaliacao.md` - cases, fichas, rubricas e resolucoes.
 - `references/fluxo-agentico.md` - contratos de orquestracao, paralelismo, handoffs e recuperacao de falhas.
 - `references/cenarios-de-teste.md` - cenarios de pressao para validar se a skill esta pronta para uso por professores.
+- `references/perfil-dos-alunos.md` - perfil pedagogico padrao da turma, nivel de repertorio e implicacoes didaticas.
+- `references/padroes-slides-referencia.md` - padroes desejados de estrutura, interatividade e densidade dos decks.
+- `references/padroes-apostilas-referencia.md` - padroes desejados de narrativa, profundidade e estilo das apostilas.
+- `references/anti-padroes.md` - erros recorrentes que a skill deve evitar explicitamente.
 
 ## Saidas Esperadas
 
@@ -127,6 +167,8 @@ Para aulas novas:
 - PDF se a exportacao estiver disponivel.
 - Pagina no Notion com roteiro, recursos e atividades.
 - Apostila/material de leitura em pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteudo`.
+- Deck com densidade suficiente para sala e revisao posterior, especialmente quando a turma tem repertorio tecnico baixo.
+- Apostila com narrativa didatica longa o bastante para sustentar estudo autonomo, e nao apenas um resumo curto do tema.
 - Atividades e resolucoes quando aplicavel.
 
 Para refinamento de aulas existentes:
@@ -144,10 +186,19 @@ Nao considerar a aula finalizada sem estas evidencias:
 - pergunta central, objetivo verificavel, lacuna de aprendizagem e criterio de sucesso;
 - roteiro em atos com abertura, aplicacao, resolucao e sintese;
 - slides ou plano de slides coerente com `frontend-slides` quando houver deck HTML;
+- bloco de conteudo tratado como arco unico quando houver 2 ou 3 aulas consecutivas;
+- conceitos novos importantes definidos, contextualizados e exemplificados antes de serem usados como jargao;
 - atividade, resolucao e rubrica quando a aula pedir aplicacao ou avaliacao;
 - apostila/material de estudo em pagina propria no Notion quando for material de leitura;
 - pagina da aula no Notion criada ou atualizada, sem caminho local como substituto oficial de anexo;
 - checklist de qualidade revisado e falhas criticas corrigidas ou declaradas como bloqueio.
+
+Falhas criticas adicionais:
+
+- deck excessivamente curto para o escopo pedido;
+- deck longo, mas excessivamente atomizado e sem continuidade;
+- apostila com cara de resumo rapido;
+- conceito novo importante mencionado sem introducao clara para turma basica.
 
 ## Regra Central
 

@@ -56,7 +56,7 @@ Se o conector nao permitir anexar HTML/PDF na coluna `Arquivos`, registrar a lim
 
 ### Publico-alvo
 
-Escrever para alunos de TI do 2o semestre, com pouca experiencia profissional em Engenharia de Software.
+Escrever para alunos de TI do 2o semestre, com pouca experiencia profissional, baixo repertorio tecnico previo e necessidade de contextualizacao forte antes do uso de termos da area.
 
 ### Tom de voz
 
@@ -70,6 +70,13 @@ Nao produzir apenas topicos frios. Construir um texto fluido:
 2. apresentar a teoria como resposta a essa tensao;
 3. conectar conceitos em progressao logica;
 4. fechar com aplicacao pratica.
+
+Sempre que surgir um termo tecnico novo ou pouco obvio para turma basica:
+
+1. nomear o termo;
+2. explicar em linguagem simples;
+3. contextualizar por que ele importa;
+4. mostrar exemplo, contraexemplo, analogia ou caso.
 
 ### Analogias poderosas
 
@@ -122,15 +129,29 @@ Usar:
 
 Evitar texto enciclopedico. Cada secao deve parecer continuar a anterior.
 
+### Densidade minima
+
+Por padrao, a apostila nao deve ter cara de resumo de slide.
+
+Esperado:
+
+- introducao robusta;
+- desenvolvimento com varias transicoes;
+- explicacoes intermediarias suficientes para leitura autonoma;
+- pelo menos um ou mais exemplos/casos significativos por bloco conceitual relevante;
+- conclusao que amarre o problema inicial ao uso pratico do conceito.
+
 ## Checklist de Qualidade
 
 - O texto poderia ser lido por um aluno ausente e ainda fazer sentido?
 - O material tem uma abertura interessante?
 - Os conceitos aparecem dentro de um problema, nao soltos?
 - Ha analogias suficientes para reduzir abstracao?
+- Conceitos novos importantes foram definidos antes de serem usados?
 - Ha exemplos ou casos reais que provam relevancia?
 - Ha dicas de ouro em call-outs?
 - A conclusao entrega uma sintese memoravel?
+- O texto esta denso o bastante para aluno ausente estudar sem apoio do professor?
 - A saida esta pronta para colar/criar no Notion?
 - A apostila foi criada como pagina Notion com `Tipo` marcado como conteudo?
 - A pagina da aula aponta para a pagina da apostila?
@@ -140,6 +161,7 @@ Evitar texto enciclopedico. Cada secao deve parecer continuar a anterior.
 - Listao de topicos sem narrativa.
 - Jargao sem traducao.
 - Apostila com cara de transcricao de slide.
+- Apostila curta demais para o peso do tema.
 - Citar autores sem explicar por que importam.
 - Caminhos locais, instrucoes de arquivo local ou dependencias fora do Notion como saida final.
 - Deixar apostila apenas dentro do corpo da pagina da aula quando ela deve servir como material de leitura.

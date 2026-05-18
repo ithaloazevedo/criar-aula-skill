@@ -22,6 +22,13 @@ criar-aula/
     checklist-qualidade.md
     notion-docencia.md
     atividades-e-avaliacao.md
+    perfil-dos-alunos.md
+    padroes-slides-referencia.md
+    padroes-apostilas-referencia.md
+    anti-padroes.md
+docs/
+  superpowers/
+    specs/
 scripts/
   validate-skill.ps1
   sync-installed.ps1

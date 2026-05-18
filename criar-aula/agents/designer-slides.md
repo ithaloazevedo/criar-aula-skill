@@ -19,22 +19,31 @@ Este agente define criterios e decisoes visuais. Quando a saida for um deck HTML
 - Design system em `references/design-system-slides.md`.
 - Aula visual de referencia, quando existir.
 - Restricoes de sala, fonte ou densidade.
+- Perfil da turma e nivel de repertorio.
+- Se as aulas fazem parte de um bloco maior de 2 ou 3 encontros consecutivos.
 
 ## Saida Esperada
 
 - Estrutura de slides por tipo: capa, contexto, pergunta, conceito, exemplo, resolucao, atividade, sintese.
+- Estrutura macro do deck por atos ou sub-blocos, quando o encontro cobrir varias aulas seguidas.
 - Decisao de divisao quando houver texto demais.
+- Decisao de agrupamento quando o deck estiver atomizado demais.
 - Regras visuais aplicadas.
 - Instrucao explicita para uso de `frontend-slides` quando houver HTML.
 - Alertas de legibilidade.
+- Alertas quando conceito novo aparecer sem slide de apresentacao propria.
 
 ## Checklist
 
 - Fonte grande e com bom peso?
 - Maximo de 3 ideias por slide?
 - Conceitos densos foram divididos?
+- Conceitos novos importantes foram apresentados com definicao, contexto e exemplo?
 - Perguntas tem slides de resolucao quando necessario?
 - O deck usa o mesmo sistema visual dos decks recentes?
+- O deck esta longo o bastante para sustentar aula com turma pouco participativa?
+- O deck evita tanto o excesso de compactacao quanto a fragmentacao em micro-slides?
+- Ha pausas de interacao, comparacoes, mini-cases e perguntas de sala ao longo do bloco?
 - `frontend-slides` foi usado quando a entrega inclui HTML?
 
 ## Evitar
@@ -43,3 +52,6 @@ Este agente define criterios e decisoes visuais. Quando a saida for um deck HTML
 - Design decorativo que reduz leitura.
 - Cards dentro de cards.
 - Uma unica cor dominando todo o deck sem contraste funcional.
+- Deck de 6 a 10 slides para conteudo que claramente pede desenvolvimento maior.
+- Slide de impacto vazio ocupando espaco demais sem funcao pedagogica.
+- Quebrar uma linha de raciocinio em excesso so para "parecer dinamico".

@@ -7,7 +7,9 @@ Rodar antes de considerar a aula concluida.
 - A aula tem uma pergunta central?
 - O objetivo de aprendizagem esta claro?
 - Ha continuidade com aulas anteriores?
+- Quando ha 2 ou 3 aulas seguidas, o bloco inteiro faz sentido como arco unico?
 - Existe uma ancora conceitual recorrente?
+- Conceitos novos importantes sao apresentados como se a turma nunca tivesse visto aquilo?
 - Conceitos importantes tem exemplos?
 - Perguntas importantes tem respostas ou resolucoes?
 - Ha aplicacao pratica ou atividade quando o tema pede?
@@ -24,8 +26,12 @@ Rodar antes de considerar a aula concluida.
 - Fonte legivel para alunos do fundo?
 - Maximo de 3 bullets por slide?
 - Slides densos foram divididos?
+- O deck ficou longo o bastante para o escopo pedido?
+- O deck evita fragmentacao excessiva em micro-slides?
 - Slides de conceito tem detalhe suficiente para estudo?
+- Conceitos novos aparecem com definicao, contexto e exemplo?
 - Slides de pergunta tem resolucao quando necessario?
+- Ha provocacoes, pausas de interacao, mini-cases ou comparacoes ao longo do deck?
 - Design system consistente?
 
 ## Atividades
@@ -51,6 +57,9 @@ Se algum item critico falhar, corrigir antes de finalizar:
 
 - ausencia de pergunta central;
 - slides sem legibilidade;
+- deck curto demais para o conteudo;
+- deck quebrado demais sem continuidade;
+- conceito novo relevante sem definicao;
 - pergunta sem resolucao;
 - Notion sem roteiro/material;
 - atividade sem resposta esperada.
@@ -63,6 +72,7 @@ A entrega esta pronta para o professor quando:
 - a aula tem objetivo verificavel e criterio de sucesso;
 - o roteiro indica o que acontece em cada bloco;
 - materiais de estudo podem ser compreendidos por aluno ausente;
+- slides e apostila introduzem conceitos como material de ensino, nao apenas como lembrete para quem ja sabe;
 - atividade avaliativa tem rubrica e resposta esperada;
 - Notion foi atualizado ou a limitacao foi declarada sem prometer o que nao ocorreu;
 - pendencias restantes estao separadas de entregas concluidas.

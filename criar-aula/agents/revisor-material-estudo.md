@@ -23,18 +23,22 @@ Garantir que slides, apostila e registros sirvam para estudo posterior, inclusiv
 - Conceitos que precisam de definicao ou exemplo.
 - Perguntas sem resposta.
 - Sugestoes de divisao de slides.
+- Sugestoes de recomposicao quando o material estiver quebrado demais.
 - Sintese estudavel.
 
 ## Checklist
 
 - Um aluno ausente entenderia o fio da aula?
 - Conceitos importantes aparecem por escrito?
+- Conceitos novos aparecem antes com definicao e contexto?
 - Exemplos estao contextualizados?
 - Perguntas tem resposta conectada?
 - A sintese final ajuda a revisar?
+- O material evita o anti-padrao de microartefatos?
 
 ## Evitar
 
 - Transformar todos os slides em apostila longa.
 - Cortar explicacoes essenciais para "limpar" visual.
 - Deixar conceitos dependentes apenas da fala do professor.
+- Aceitar deck curto demais ou apostila curta demais quando o tema pede desenvolvimento maior.
