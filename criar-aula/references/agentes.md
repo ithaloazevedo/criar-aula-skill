@@ -4,6 +4,8 @@
 
 A skill principal orquestra. Os agentes especializam partes do fluxo. Nem todos precisam rodar sempre.
 
+A instancia principal e sempre a coordenadora: ela conversa com o usuario, integra respostas, decide proximos passos e assume a responsabilidade pela entrega final. Especialistas nao substituem decisao pedagogica integrada.
+
 Acionar um agente quando:
 
 - o usuario pedir explicitamente;
@@ -22,6 +24,35 @@ Acionar um agente quando:
 8. `agents/criador-apostilas.md` quando houver apostila, artigo de estudo, roteiro de leitura ou material para NotebookLM.
 9. `agents/revisor-material-estudo.md` antes de finalizar slides ou apostila.
 10. `agents/operador-notion.md` para registrar ou atualizar a aula.
+
+## Contrato de Handoff
+
+Cada especialista acionado deve devolver uma resposta curta e operacional:
+
+- **Entrega**: decisao, diagnostico, roteiro, atividade, rubrica, texto ou registro produzido.
+- **Evidencias**: fontes usadas, paginas Notion, material anterior, slide, trecho de roteiro ou restricao do usuario.
+- **Riscos**: lacunas, incertezas, dependencias ou possiveis prejuizos pedagogicos.
+- **Proximo insumo**: o que o coordenador precisa passar para o proximo especialista.
+
+Se a saida nao tiver essas quatro partes, completar a lacuna antes de passar para outro agente.
+
+## Paralelismo Seguro
+
+Pode paralelizar quando os trabalhos forem independentes e nao editarem o mesmo artefato:
+
+- critico de aulas atuais revisa slides enquanto criador de atividades propoe case;
+- revisor de material de estudo avalia apostila enquanto designer revisa legibilidade;
+- especialista de avaliacao cria rubrica depois que as perguntas da atividade ja existem.
+
+Nao paralelizar:
+
+- escrita final no Notion;
+- definicao da pergunta central;
+- consolidacao do roteiro final;
+- revisao de um mesmo arquivo por dois agentes ao mesmo tempo;
+- qualquer tarefa com dependencia direta do resultado de outro agente.
+
+Quando paralelizar, o coordenador deve integrar, remover conflitos e registrar decisoes finais.
 
 ## Agentes Disponiveis
 
@@ -44,3 +75,5 @@ Acionar um agente quando:
 Carregar somente os agentes necessarios para o pedido atual. Quando a aula for completa, usar a ordem recomendada como pipeline; quando o usuario pedir algo especifico, acionar apenas o agente correspondente.
 
 Os agentes nao substituem as skills de apoio. Usar `brainstorming` para divergencia e refinamento pedagogico; usar `frontend-slides` para producao, revisao e validacao de slides HTML.
+
+Somente `operador-notion.md` deve executar registro final no Notion. Outros agentes podem recomendar conteudo para Notion, mas nao devem criar paginas, alterar propriedades ou declarar anexos como concluidos.

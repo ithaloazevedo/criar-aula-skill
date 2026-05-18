@@ -54,3 +54,17 @@ Se algum item critico falhar, corrigir antes de finalizar:
 - pergunta sem resolucao;
 - Notion sem roteiro/material;
 - atividade sem resposta esperada.
+
+## Definition of Done Operacional
+
+A entrega esta pronta para o professor quando:
+
+- o professor consegue abrir a aula por uma pergunta ou problema claro;
+- a aula tem objetivo verificavel e criterio de sucesso;
+- o roteiro indica o que acontece em cada bloco;
+- materiais de estudo podem ser compreendidos por aluno ausente;
+- atividade avaliativa tem rubrica e resposta esperada;
+- Notion foi atualizado ou a limitacao foi declarada sem prometer o que nao ocorreu;
+- pendencias restantes estao separadas de entregas concluidas.
+
+Nao usar "feito" se houver bloqueio em qualquer item critico. Usar "rascunho", "pronto para revisao" ou "pendente de Notion/exportacao" conforme o caso.

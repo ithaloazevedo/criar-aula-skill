@@ -20,6 +20,31 @@ Esta skill orquestra o fluxo. Ela deve acionar skills de apoio quando a tarefa p
 
 Nao substituir essas skills pelos agentes internos. Os agentes definem responsabilidades pedagogicas; as skills de apoio trazem metodos e ferramentas especializadas.
 
+## Modos de Uso
+
+Escolha o modo pelo pedido do professor. Se o pedido for ambiguo, assumir o modo mais completo que caiba no contexto e declarar a suposicao.
+
+- **Aula completa**: usar o fluxo obrigatorio inteiro, do Notion ate a revisao final.
+- **Revisao de aula existente**: carregar materiais, acionar o critico de aulas atuais e revisar apenas o que impacta clareza, continuidade, design ou estudo posterior.
+- **Apostila/material de estudo**: acionar `criador-apostilas.md`, registrar como pagina propria no Notion e linkar na aula.
+- **Atividade ou avaliacao**: acionar `criador-atividades.md`; se houver nota, tambem acionar `especialista-avaliacao.md`.
+- **Operacao docente**: para presenca, faltas, notas ou registros administrativos, acionar somente `operador-notion.md` e nunca inventar dado ausente.
+
+## Orquestracao Agentica
+
+A instancia principal continua responsavel pela conversa com o usuario, pela integracao dos artefatos e pela decisao final. Os especialistas sao papeis de trabalho: carregue somente os arquivos necessarios e faca cada especialista produzir uma saida objetiva.
+
+Use `references/fluxo-agentico.md` quando a tarefa envolver aula completa, multiplos artefatos, revisao complexa, apostila, avaliacao ou possibilidade de trabalho em paralelo.
+
+Contrato minimo de qualquer especialista acionado:
+
+- decisao ou entrega principal;
+- evidencias usadas;
+- riscos ou pendencias;
+- proximo artefato necessario.
+
+Se houver subagentes disponiveis e a tarefa permitir paralelismo seguro, dividir apenas trabalhos independentes, como critica de slides, proposta de atividade e revisao de apostila. Manter Notion, decisoes finais e integracao em um unico coordenador para evitar duplicidade.
+
 ## Fluxo Obrigatorio
 
 Sempre seguir este fluxo:
@@ -52,7 +77,7 @@ Sempre seguir este fluxo:
 
 7. **Documentacao no Notion**
    - Criar ou atualizar pagina da aula com roteiro, recursos, atividades, resolucoes e observacoes.
-   - Quando houver apostila/material de leitura, criar pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteúdo`, e linkar na aula.
+   - Quando houver apostila/material de leitura, criar pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteudo`, e linkar na aula.
    - Usar a coluna de arquivos quando o conector permitir anexar ou referenciar artefatos corretamente.
    - Registrar limitacoes de anexos sem transformar caminho local em saida oficial.
 
@@ -89,6 +114,8 @@ Carregar somente o que for necessario:
 - `references/checklist-qualidade.md` - revisao final obrigatoria.
 - `references/notion-docencia.md` - convencoes de registro no Notion.
 - `references/atividades-e-avaliacao.md` - cases, fichas, rubricas e resolucoes.
+- `references/fluxo-agentico.md` - contratos de orquestracao, paralelismo, handoffs e recuperacao de falhas.
+- `references/cenarios-de-teste.md` - cenarios de pressao para validar se a skill esta pronta para uso por professores.
 
 ## Saidas Esperadas
 
@@ -99,7 +126,7 @@ Para aulas novas:
 - Evidencia de uso de `frontend-slides` na criacao ou revisao do deck.
 - PDF se a exportacao estiver disponivel.
 - Pagina no Notion com roteiro, recursos e atividades.
-- Apostila/material de leitura em pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteúdo`.
+- Apostila/material de leitura em pagina propria no Notion com `Tipo` marcado como a opcao real de conteudo da base, por exemplo `Conteudo`.
 - Atividades e resolucoes quando aplicavel.
 
 Para refinamento de aulas existentes:
@@ -108,6 +135,19 @@ Para refinamento de aulas existentes:
 - Lista priorizada de melhorias.
 - Versao revisada dos slides ou roteiro.
 - Atualizacao no Notion quando necessario.
+
+## Definition of Done
+
+Nao considerar a aula finalizada sem estas evidencias:
+
+- contexto da disciplina consultado ou limitacao explicitamente registrada;
+- pergunta central, objetivo verificavel, lacuna de aprendizagem e criterio de sucesso;
+- roteiro em atos com abertura, aplicacao, resolucao e sintese;
+- slides ou plano de slides coerente com `frontend-slides` quando houver deck HTML;
+- atividade, resolucao e rubrica quando a aula pedir aplicacao ou avaliacao;
+- apostila/material de estudo em pagina propria no Notion quando for material de leitura;
+- pagina da aula no Notion criada ou atualizada, sem caminho local como substituto oficial de anexo;
+- checklist de qualidade revisado e falhas criticas corrigidas ou declaradas como bloqueio.
 
 ## Regra Central
 
